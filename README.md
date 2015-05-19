@@ -1,3 +1,3 @@
 # Virtual Ubuntu
 
-An Ubuntu Desktop running under Vagrant
+An Ubuntu Unity Desktop running under Vagrant
