@@ -1,0 +1,10 @@
+[user]
+    name = Owain Lewis
+    email = owain@owainlewis.com
+[github]
+    user = owainlewis
+[push]
+    default = simple
+[core]
+    excludesfile = ~/.gitignore
+    editor = emacs
