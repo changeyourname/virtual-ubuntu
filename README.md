@@ -1,6 +1,6 @@
 # Virtual Ubuntu
 
-An Ubuntu Unity Desktop for general development running under Vagrant
+A Ubuntu Unity Desktop for programmers running under Vagrant
 
 ## Motivation
 
