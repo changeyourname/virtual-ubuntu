@@ -15,7 +15,6 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "provision.sh"
 
   config.vbguest.auto_update = true
-  config.vbguest.no_remote   = false
 
   config.vm.provider :virtualbox do |vb|
 
