@@ -4,7 +4,7 @@ A Ubuntu Unity Desktop for programmers running under Vagrant
 
 ## Motivation
 
-This is a clean slate Ubuntu development environment for day to day programming and development work. 
+This is a clean slate Ubuntu development environment for day to day work. 
 
 I want to make sure my entire development environment can be recreated quickly and easily.
 
