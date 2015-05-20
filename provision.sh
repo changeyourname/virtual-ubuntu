@@ -1,20 +1,19 @@
-#!usr/bin/env bash
-
 ########################################
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install -y --force-yes ubuntu-desktop
 
 ########################################
 # Install software essentials
 ########################################
 
-sudo apt-get install -y \
+sudo apt-get install -y --force-yes \
+ubuntu-desktop
+build-essential
 git \
 curl \
 zsh \
-gnome-terminal
+gnome-terminal \
 
 ########################################
 ## Docker

@@ -1,11 +1,21 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# Name of your local workspace to map
+WORKSPACE="Workspace"
+
+def get_workspace
+  "#{Dir.home}\#{WORKSPACE}"
+end
+
 Vagrant.configure(2) do |config|
 
   config.vm.box = "ubuntu/precise64"
 
   config.vm.provision "shell", path: "provision.sh"
+
+  config.vbguest.auto_update = true
+  config.vbguest.no_remote   = false
 
   config.vm.provider :virtualbox do |vb|
 
@@ -13,11 +23,12 @@ Vagrant.configure(2) do |config|
 
     vb.customize ["modifyvm", :id, "--memory", "2048"]
     vb.customize ["modifyvm", :id, "--cpus", "4"]
-    vb.customize ["modifyvm", :id, "--graphicscontroller", "vboxvga"]
-    vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
-    vb.customize ["modifyvm", :id, "--ioapic", "on"]
-    vb.customize ["modifyvm", :id, "--vram", "128"]
-    vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
+  end
+
+  # Workspace
+
+  if Dir.exists?(get_workspace)
+    config.vm.synced_folder get_workspace, "/vagrant/home/#{WORKSPACE}"
   end
 
   # SSH
