@@ -1,5 +1,9 @@
 # Virtual Ubuntu
 
+GUEST PROBLEMS
+
+http://aruizca.com/steps-to-create-a-vagrant-base-box-with-ubuntu-14-04-desktop-gui-and-virtualbox/
+
 A Ubuntu Unity Desktop for programmers running under Vagrant
 
 ## Motivation
