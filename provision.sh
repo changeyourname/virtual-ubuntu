@@ -13,7 +13,6 @@ ubuntu-desktop \
 linux-headers-server \
 dkms \
 virtualbox-guest-x11 \
-virtualbox-guest-additions \
 git \
 curl \
 zsh \
@@ -23,5 +22,18 @@ gnome-terminal \
 ## Docker
 ########################################
 
-curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+curl -sSL https://get.docker.com/ubuntu/ |
 sudo adduser vagrant docker
+
+########################################
+# ZSH
+########################################
+sudo curl -L http://install.ohmyz.sh | sh
+chsh -s `/bin/zsh`
+
+########################################
+# Emacs
+########################################
+sudo add-apt-repository ppa:cassou/emacs
+sudo apt-get update
+sudo apt-get install emacs24
