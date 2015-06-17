@@ -8,10 +8,10 @@ sudo apt-get upgrade
 ########################################
 
 sudo apt-get install -y --force-yes \
-ubuntu-desktop
-dkms
-virtualbox-guest-additions
-build-essential
+ubuntu-desktop \
+dkms \
+virtualbox-guest-additions \
+build-essential \
 git \
 curl \
 zsh \
