@@ -1,12 +1,12 @@
 ########################################
-
+# Provisioning Script for Ubuntu Dev Env
+########################################
 sudo apt-get update
 sudo apt-get upgrade
 
 ########################################
 # Install software essentials
 ########################################
-
 sudo apt-get install -y --force-yes \
 build-essential \
 ubuntu-desktop \
@@ -19,9 +19,8 @@ zsh \
 gnome-terminal \
 
 ########################################
-## Docker
+# Docker
 ########################################
-
 curl -sSL https://get.docker.com/ubuntu/ |
 sudo adduser vagrant docker
 
