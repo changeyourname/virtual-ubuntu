@@ -9,13 +9,16 @@ def get_workspace
 end
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/precise64"
+  config.vm.box = "boxcutter/ubuntu1504-desktop"
   config.vm.provision "shell", path: "provision.sh"
-  
-  config.vm.provider :virtualbox do |vb|
-    vb.gui = true
-    vb.customize ["modifyvm", :id, "--memory", "2048"]
-    vb.customize ["modifyvm", :id, "--cpus", "4"]
+
+  # Beef up the VM
+  config.vm.provider :virtualbox do |v|
+    v.gui = true
+    v.customize ["modifyvm", :id, "--memory", "2048"]
+    # Video RAM in MB ( Need at least 16 MB for full screen )
+    v.customize ["modifyvm", :id, "--vram", "64"]
+    v.customize ["modifyvm", :id, "--cpus", "4"]
   end
 
   # Workspace

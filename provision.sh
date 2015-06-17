@@ -9,29 +9,15 @@ sudo apt-get upgrade
 ########################################
 sudo apt-get install -y --force-yes \
 build-essential \
-ubuntu-desktop \
 linux-headers-server \
 dkms \
 virtualbox-guest-x11 \
 git \
 curl \
 zsh \
-gnome-terminal \
-
-########################################
-# Docker
-########################################
-curl -sSL https://get.docker.com/ubuntu/ |
-sudo adduser vagrant docker
+gnome-terminal
 
 ########################################
 # ZSH
 ########################################
 sudo curl -L http://install.ohmyz.sh | sh
-
-########################################
-# Emacs
-########################################
-sudo add-apt-repository ppa:cassou/emacs
-sudo apt-get update
-sudo apt-get install emacs24
