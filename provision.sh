@@ -28,7 +28,6 @@ sudo adduser vagrant docker
 # ZSH
 ########################################
 sudo curl -L http://install.ohmyz.sh | sh
-chsh -s `/bin/zsh`
 
 ########################################
 # Emacs
