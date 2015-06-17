@@ -9,17 +9,11 @@ def get_workspace
 end
 
 Vagrant.configure(2) do |config|
-
   config.vm.box = "ubuntu/precise64"
-
   config.vm.provision "shell", path: "provision.sh"
-
-  config.vbguest.auto_update = true
-
+  
   config.vm.provider :virtualbox do |vb|
-
     vb.gui = true
-
     vb.customize ["modifyvm", :id, "--memory", "2048"]
     vb.customize ["modifyvm", :id, "--cpus", "4"]
   end
@@ -31,7 +25,6 @@ Vagrant.configure(2) do |config|
   end
 
   # SSH
-
   config.ssh.forward_agent = true
   config.ssh.forward_x11   = true
 end
