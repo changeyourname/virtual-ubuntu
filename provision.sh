@@ -9,6 +9,7 @@ sudo apt-get upgrade
 
 sudo apt-get install -y --force-yes \
 ubuntu-desktop \
+linux-headers-server \
 dkms \
 virtualbox-guest-x11 \
 virtualbox-guest-additions \
