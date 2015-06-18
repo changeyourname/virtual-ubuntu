@@ -9,7 +9,7 @@ def get_workspace
 end
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "boxcutter/ubuntu1504-desktop"
+  config.vm.box = "ubuntu/vivid64"
   config.vm.provision "shell", path: "provision.sh"
 
   # Beef up the VM
