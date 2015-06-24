@@ -13,9 +13,12 @@ Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/vivid64"
 
   config.vm.provision "shell", path: "provision.sh"
-  config.vm.provision "shell", path: "provisioning/emacs.sh"
-  config.vm.provision "shell", path: "provisioning/haskell.sh"
-  config.vm.provision "shell", path: "provisioning/java.sh"
+  
+  # Add your own provisioning scripts here
+  
+  #config.vm.provision "shell", path: "provisioning/emacs.sh"
+  #config.vm.provision "shell", path: "provisioning/haskell.sh"
+  #config.vm.provision "shell", path: "provisioning/java.sh"
 
   # Beef up the VM
   config.vm.provider :virtualbox do |v|
