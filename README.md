@@ -14,6 +14,3 @@ I want to make sure my entire development environment can be recreated quickly a
 vagrant up
 ```
 
-TODO
-
-env TERM=xterm-256color emacs -nw
