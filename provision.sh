@@ -20,4 +20,6 @@ zsh
 ########################################
 sudo curl -L http://install.ohmyz.sh | sh
 
+sudo apt-get remove unity-webapps-common
+
 echo 'Done'
