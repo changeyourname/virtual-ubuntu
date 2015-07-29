@@ -22,4 +22,7 @@ sudo curl -L http://install.ohmyz.sh | sh
 
 sudo apt-get remove unity-webapps-common
 
+# Disable Ubuntu search results from web
+gsettings set com.canonical.Unity.Lenses remote-content-search none
+
 echo 'Done'
