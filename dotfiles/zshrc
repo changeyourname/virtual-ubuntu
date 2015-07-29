@@ -8,6 +8,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:\/usr/
 
 source $ZSH/oh-my-zsh.sh    
 
-export EDITOR='vim'
+export EDITOR='emacs'
 
 alias emacs="TERM=xterm-256color emacs -nw"
